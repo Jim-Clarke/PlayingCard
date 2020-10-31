@@ -16,18 +16,18 @@ public enum Rank: Int, CaseIterable {
 
 // MARK: - Comparable
 
-extension Rank: Comparable {
-    public static func <(lhs: Rank, rhs: Rank) -> Bool {
-        switch (lhs, rhs) {
-        case (_, _) where lhs == rhs:
-            return false
-        case (.ace, _):
-            return false
-        default:
-            return lhs.rawValue < rhs.rawValue
-        }
-    }
-}
+// extension Rank: Comparable {
+//     public static func <(lhs: Rank, rhs: Rank) -> Bool {
+//         switch (lhs, rhs) {
+//         case (_, _) where lhs == rhs:
+//             return false
+//         case (.ace, _):
+//             return false
+//         default:
+//             return lhs.rawValue < rhs.rawValue
+//         }
+//     }
+// }
 
 // MARK: - CustomStringConvertible
 

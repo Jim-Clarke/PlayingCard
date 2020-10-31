@@ -8,7 +8,8 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-public struct PlayingCard: Equatable, Hashable {
+// public struct PlayingCard: Equatable, Hashable {
+public struct PlayingCard {
     public let rank: Rank
     public let suit: Suit
 
@@ -20,11 +21,11 @@ public struct PlayingCard: Equatable, Hashable {
 
 // MARK: - Comparable
 
-extension PlayingCard: Comparable {
-    public static func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
-        return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
-    }
-}
+// extension PlayingCard: Comparable {
+//     public static func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+//         return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
+//     }
+// }
 
 // MARK: - CustomStringConvertible
 
